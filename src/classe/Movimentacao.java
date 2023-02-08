@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Movimentacao{
 
-    private Date dataMovimentacao;//falta os tratamentos pra o tipo data
+    private String dataMovimentacao;//falta os tratamentos pra o tipo data
     private String Destino;
     private String Origem;
     private int idProduto;
@@ -60,11 +60,11 @@ public class Movimentacao{
         return Origem;
     }
 
-    public void setDataMovimentacao(Date dataMovimentacao){
+    public void setDataMovimentacao(String dataMovimentacao){
         this.dataMovimentacao =  dataMovimentacao;
     }
 
-    public Date getDataMovimentacao() {
+    public String getDataMovimentacao() {
         return  dataMovimentacao;
     }
 
@@ -108,7 +108,7 @@ public class Movimentacao{
         aux2 = input.nextLine();
         setOrigem(aux2);
         input.nextLine();
-        System.out.println("Informe a Data da Movimentação do Produto:");
+        System.out.println("Informe a Data da Movimentação do Produto:(hh:mm DD/MM/YYYY)");
         aux2 = input.nextLine();
         setDataMovimentacao(aux2);
         input.nextLine();
@@ -170,7 +170,7 @@ public class Movimentacao{
                 System.out.println();
                 break;
             case 6:
-                System.out.println("Informe a Nova Data da Movimentação do Produto:");
+                System.out.println("Informe a Nova Data da Movimentação do Produto:(hh:mm DD/MM/YYYY)");
                 aux2 = input.nextLine();
                 setDataMovimentacao(aux2);
                 input.nextLine();
