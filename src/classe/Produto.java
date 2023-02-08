@@ -1,9 +1,3 @@
-/*1) Permitir a criação e remoção de informações referentes aos produtos, movimentações e funcionários/responsáveis;
-2) Permitir a edição de informações referentes aos produtos, movimentações e funcionários/responsáveis;
-3) Permitir a associação de produto a uma localidade do estoque;
-4) Permitir a alteração do status
-• “Em estoque”, “Sem estoque”, “quantidade” etc.*/
-
 import java.util.Scanner;
 
 public class Produtos{
