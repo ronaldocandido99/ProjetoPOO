@@ -3,10 +3,6 @@ package classes;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import classes.Funcionarios;
-import classes.Produtos;
-import classes.Movimentacao;
-
 public class App {
     public static void msgErroDados(){
         System.err.println("Dados informados incorretamente! Por favor, informe os dados corretamente.");
