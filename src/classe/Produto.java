@@ -122,6 +122,7 @@ public class Produtos{
         setId(ficha);
         System.out.println("Informe o código de identificação do produto: ");
         aux1 = input.nextInt();
+        input.nextLine();
         setId(aux1);
         System.out.println("Informe o Nome: ");
         aux2 = input.nextLine();
@@ -137,6 +138,7 @@ public class Produtos{
         setMarca(aux2);
         System.out.println("Informe o preco: ");
         aux1 = input.nextInt();
+        input.nextLine();
         setPreco(aux1);
         System.out.println("Informe o tipo: ");
         aux2 = input.nextLine();
@@ -152,6 +154,7 @@ public class Produtos{
         setFornecedor(aux2);
         System.out.println("Informe a quantidade: ");
         aux1 = input.nextInt();
+        input.nextLine();
         setQuantidade(aux1);
         System.out.println("Informe o status: ");
         aux2 = input.nextLine();
