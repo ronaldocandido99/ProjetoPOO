@@ -190,7 +190,7 @@ public class Produtos{
                 + "Sair(12).");
     }
 
-    public void editar_produto() {// Alterar detalhes de um empregado
+    public void editar_produto() {// Alterar detalhes de um produto
 
         int opcao = 1;
         int aux1;
@@ -212,24 +212,28 @@ public class Produtos{
                 System.out.println("Informe o Novo Nome: ");
                 aux2 = input.nextLine();
                 setNome(aux2);
+                input.nextLine();
                 System.out.println();
                 break;
             case 3:
                 System.out.println("Informe o Novo Tamanho: ");
                 aux2 = input.nextLine();
                 setTamanho(aux2);
+                input.nextLine();
                 System.out.println();
                 break;
             case 4:
                 System.out.println("Informe a Nova Cor: ");
                 aux2 = input.nextLine();
                 setCor(aux2);
+                input.nextLine();
                 System.out.println();
                 break;
             case 5:
                 System.out.println("Informe a Nova Marca: ");
                 aux2 = input.nextLine();
                 setMarca(aux2);
+                input.nextLine();
                 System.out.println();
                 break;
             case 6:
@@ -243,24 +247,28 @@ public class Produtos{
                 System.out.println("Informe o Novo Tipo: ");
                 aux2 = input.nextLine();
                 setCor(aux2);
+                input.nextLine();
                 System.out.println();
                 break;
             case 8:
                 System.out.println("Informe a Nova Categoria: ");
                 aux2 = input.nextLine();
                 setCategoria(aux2);
+                input.nextLine();
                 System.out.println();
                 break;
             case 9:
                 System.out.println("Informe o Novo Fabricante: ");
                 aux2 = input.nextLine();
                 setFabricante(aux2);
+                input.nextLine();
                 System.out.println();
                 break;
             case 10:
                 System.out.println("Informe o Novo Fornecedor: ");
                 aux2 = input.nextLine();
                 setFornecedor(aux2);
+                input.nextLine();
                 System.out.println();
                 break;
 
@@ -268,6 +276,7 @@ public class Produtos{
                 System.out.println("Informe a Nova Quantidade: ");
                 aux1 = input.nextInt();
                 setQuantidade(aux1);
+                input.nextLine();
                 System.out.println();
                 break;
 
