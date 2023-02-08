@@ -24,7 +24,6 @@ public class App {
         System.out.println("*  [5] Remover Produto                *");
         System.out.println("*  [6] Remover Funcionário            *");
         System.out.println("*  [7] Realizar Movimentação          *");
-        System.out.println("*  [8] Alterar Status do Produto      *");
         System.out.println("*  [0] Encerrar programa              *");
         System.out.println("***************************************");
         System.out.print("Selecione a opção desejada: ");
@@ -106,14 +105,6 @@ public class App {
                     mov.add_m(indice)
                     System.out.println();
                     option = startOptions();
-                    break;
-                case 8: /* Alterar Status do Produto
-                    System.out.println();
-                    Relatorio relatorio = new Relatorio();
-                    relatorio.relatorio();
-                    System.out.println();
-                    option = startOptions(); */
-                   
                     break;
             }
         }
