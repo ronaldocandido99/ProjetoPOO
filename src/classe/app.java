@@ -46,6 +46,8 @@ public class App {
     public static void main(String[] args) {
 
         Produtos produto = new Produtos();
+        Funcionarios funcionario = new Funcionarios();
+        Movimentacao mov = new Movimentacao();
 
         System.out.println("***************************************");
         System.out.println("*                                     *");
@@ -57,18 +59,19 @@ public class App {
         int option = startOptions();
 
         while(option != 0){ // enquanto não for dado o comando de parar o programa
+            int indice = 1;
             switch(option){
                 case 1: // adiciona novo produto
                     System.out.println();
-                    produto.add_produto(1);
+                    produto.add_produto(indice);
                     System.out.println();
                     option = startOptions();
                     break;
-                case 2: /* adiciona novo funcionário
+                case 2: //adiciona novo funcionário
                     System.out.println();
-                    Funcionarios.add_e(ficha);
+                    funcionario.add_e(indice);
                     System.out.println();
-                    option = startOptions(); */
+                    option = startOptions(); 
                     break;
                 case 3: /* edita produto existente
                     ArrayList<Colaborador> autores = new ArrayList<Colaborador>(); // autores de uma publicacao
@@ -76,11 +79,12 @@ public class App {
                     System.out.println();
                     option = startOptions(); */
                     break;
-                case 4: /* edita funcionário existente
+                case 4: //edita funcionário existente
                     System.out.println();
-                    editProjeto(projetos, colaboradores);
+                    //editProjeto(projetos, colaboradores);
+                    funcionario.ed_e();
                     System.out.println();
-                    option = startOptions(); */
+                    option = startOptions(); 
                     break;
                 case 5: /* remove produto existente
                     System.out.println();
@@ -88,11 +92,12 @@ public class App {
                     System.out.println();
                     option = startOptions(); */
                     break;
-                case 6: /* remove funcionario existente
+                case 6: // remove funcionario existente
                     System.out.println();
-                    Projeto.queryProjeto(projetos);
+                    //Projeto.queryProjeto(projetos);
+                    funcionario.rem_e();
                     System.out.println();
-                    option = startOptions(); */
+                    option = startOptions(); 
                     break;
                 case 7: /* realiza uma movimentação de estoque
                     System.out.println();
