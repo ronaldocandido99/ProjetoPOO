@@ -1,5 +1,3 @@
-Projeto POO
-
 # Sistema para Gerenciamento de Estoque
 
 # Visão Geral do Sistema
