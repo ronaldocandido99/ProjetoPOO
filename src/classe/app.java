@@ -99,12 +99,13 @@ public class App {
                     System.out.println();
                     option = startOptions(); 
                     break;
-                case 7: /* realiza uma movimentação de estoque
+                case 7: // realiza uma movimentação de estoque
                     System.out.println();
-                    Relatorio relatorio = new Relatorio();
-                    relatorio.relatorio();
+                    //Relatorio relatorio = new Relatorio();
+                    //relatorio.relatorio();
+                    mov. add_m(indice)
                     System.out.println();
-                    option = startOptions(); */
+                    option = startOptions();
                     break;
                 case 8: /* realiza uma movimentação de estoque
                     System.out.println();
