@@ -53,7 +53,7 @@ public class Produtos{
     }
 
     public String getMarca() {
-        return cpf;
+        return marca;
     }
 
     public void setPreco(int preco){
@@ -76,7 +76,7 @@ public class Produtos{
         this.categoria = categoria;
     }
 
-    public int getCategoria(){
+    public String getCategoria(){
         return categoria;
     }
 
@@ -118,8 +118,8 @@ public class Produtos{
         aux2 = input.nextLine();
         setNome(aux2);
         System.out.println("Informe o Tamanho: ");
-        aux1 = input.nextLine();
-        setTamanho(aux1);
+        aux2 = input.nextLine();
+        setTamanho(aux2);
         System.out.println("Informe a cor: ");
         aux2 = input.nextLine();
         setCor(aux2);
