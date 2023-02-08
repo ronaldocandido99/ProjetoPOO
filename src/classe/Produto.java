@@ -251,7 +251,7 @@ public class Produtos{
             case 11:
                 System.out.println("Informe a Nova Quantidade: ");
                 aux1 = input.nextInt();
-                setFornecedor(aux1);
+                setQuantidade(aux1);
                 System.out.println();
                 break;
 
