@@ -73,11 +73,13 @@ public class App {
                     System.out.println();
                     option = startOptions(); 
                     break;
-                case 3: /* edita produto existente
-                    ArrayList<Colaborador> autores = new ArrayList<Colaborador>(); // autores de uma publicacao
-                    newProdAcad(colaboradores, autores, professores, alunos);
+                case 3: //edita produto existente
                     System.out.println();
-                    option = startOptions(); */
+                    //ArrayList<Colaborador> autores = new ArrayList<Colaborador>(); // autores de uma publicacao
+                    //newProdAcad(colaboradores, autores, professores, alunos);
+                    produto.editar_produto();
+                    System.out.println();
+                    option = startOptions(); 
                     break;
                 case 4: //edita funcionário existente
                     System.out.println();
