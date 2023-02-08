@@ -186,8 +186,8 @@ public class Produtos{
         System.out.println("Informe o campo que deseja alterar:");
         System.out.println("ID(1);\n" + "Nome(2);\n" + "Tamanho(3);\n" + 
         "Cor(4);\n" + "Marca(5);\n" + "Preço(6);\n" + "Tipo(7);\n" + "Categoria(8);\n" +
-        "Fabricante(9);\n" + "Fornecedor(10);\n" + "Quantidade(11);\n"
-                + "Sair(12).");
+        "Fabricante(9);\n" + "Fornecedor(10);\n" + "Quantidade(11);\n" + "Status(12)\n"
+                + "Sair(13).");
     }
 
     public void editar_produto() {// Alterar detalhes de um produto
@@ -196,7 +196,7 @@ public class Produtos{
         int aux1;
         String aux2;
 
-        while (opcao != 12) {
+        while (opcao != 13) {
 
             M_Inicial();
             opcao = input.nextInt();
@@ -279,8 +279,15 @@ public class Produtos{
                 input.nextLine();
                 System.out.println();
                 break;
-
             case 12:
+                System.out.println("Informe o Novo Status: ");
+                aux2 = input.nextLine();
+                setStatus(aux2);
+                input.nextLine();
+                System.out.println();
+                break;
+
+            case 13:
                 System.out.println("Modificações Salvas!!");
                 System.out.println();
                 break;
