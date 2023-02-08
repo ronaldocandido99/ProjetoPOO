@@ -48,11 +48,11 @@ public class Funcionarios{
         return telefone;
     }
 
-    public void setcpf(long cpf) {
+    public void setCPF(long cpf) {
         this.cpf = cpf;
     }
 
-    public long getcpf() {
+    public long getCPF() {
         return cpf;
     }
 
@@ -63,9 +63,9 @@ public class Funcionarios{
             System.out.println("Nome: " + getNome());
             System.out.println("Email: " + getEmail());
             System.out.println("Telefone: " + getTelefone());
-            System.out.println("CPF: " + getcpf());  
+            System.out.println("CPF: " + getCPF());  
         } else {
-            System.out.println("Empregado não existente");
+            System.out.println("Funcionario não existente");
         }
         System.out.println();
     }
@@ -86,12 +86,9 @@ public class Funcionarios{
         aux1 = input.nextLong();
         setTelefone(aux1);
         input.nextLine();
-        System.out.println("Informe o Endereço: ");
-        aux2 = input.nextLine();
-        setEndereco(aux2);
         System.out.println("Informe o CPF: ");
-        aux2 = input.nextLine();
-        setcpf(aux2);
+        aux1 = input.nextLong();
+        setCPF(aux1);
         System.out.println();
     }
 
@@ -104,7 +101,7 @@ public class Funcionarios{
         setNome(aux2);
         setEmail(aux2);
         setTelefone(aux1);
-        setcpfaux1);
+        setCPF(aux1);
     }
 
     public void M_Inicial() {// função de apoio
@@ -148,7 +145,7 @@ public class Funcionarios{
             case 4:
                 System.out.println("Informe o Novo CPF(somente numeros): ");
                 aux1 = input.nextLong();
-                setcpf(aux1);
+                setCPF(aux1);
                 input.nextLine();
                 System.out.println();
                 break;
