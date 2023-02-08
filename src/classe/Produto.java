@@ -143,7 +143,7 @@ public class Produtos{
         setFornecedor(aux2);
         System.out.println("Informe a quantidade: ");
         aux1 = input.nextInt();
-        setFornecedor(aux1);
+        setQuantidade(aux1);
         System.out.println();
     }
 
