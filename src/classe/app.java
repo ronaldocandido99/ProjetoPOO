@@ -88,11 +88,12 @@ public class App {
                     System.out.println();
                     option = startOptions(); 
                     break;
-                case 5: /* remove produto existente
+                case 5: //remove produto existente
                     System.out.println();
-                    Colaborador.queryColaborador(colaboradores);
+                    //Colaborador.queryColaborador(colaboradores);
+                    produto.remover_produto();
                     System.out.println();
-                    option = startOptions(); */
+                    option = startOptions(); 
                     break;
                 case 6: // remove funcionario existente
                     System.out.println();
@@ -109,7 +110,7 @@ public class App {
                     System.out.println();
                     option = startOptions();
                     break;
-                case 8: /* realiza uma movimentação de estoque
+                case 8: /* Alterar Status do Produto
                     System.out.println();
                     Relatorio relatorio = new Relatorio();
                     relatorio.relatorio();
