@@ -13,6 +13,7 @@ public class Produtos{
     public String fabricante;
     public String fornecedor;
     public int quantidade;
+    public String status;
     
     Scanner input = new Scanner(System.in);
 
@@ -103,6 +104,14 @@ public class Produtos{
     public int getQuantidade(){
         return quantidade;
     }
+    
+    public void setStatus(String status){
+        this.status = status;
+    }
+
+    public String getStatus(){
+        return status;
+    }
 
 
     public void add_produto(int ficha) {// Adição de um produto
@@ -144,6 +153,9 @@ public class Produtos{
         System.out.println("Informe a quantidade: ");
         aux1 = input.nextInt();
         setQuantidade(aux1);
+        System.out.println("Informe o status: ");
+        aux2 = input.nextLine();
+        setStatus(aux2);
         System.out.println();
     }
 
@@ -163,6 +175,7 @@ public class Produtos{
         setFabricante(aux2);
         setFornecedor(aux2);
         setQuantidade(aux1);
+        setStatus(aux2);
     }
 
     public void M_Inicial() {// função de apoio
