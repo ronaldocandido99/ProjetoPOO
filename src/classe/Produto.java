@@ -12,6 +12,7 @@ public class Produtos{
     public String categoria;
     public String fabricante;
     public String fornecedor;
+    public int quantidade;
     
     Scanner input = new Scanner(System.in);
 
@@ -95,20 +96,14 @@ public class Produtos{
         return fornecedor;
     }
 
-
-    public void imp_e() {
-
-        if (getId() != -1) {
-            System.out.println("Identificação: " + getId());
-            System.out.println("Nome: " + getNome());
-            System.out.println("Email: " + getEmail());
-            System.out.println("Telefone: " + getTelefone());
-            System.out.println("CPF: " + getcpf());  
-        } else {
-            System.out.println("Empregado não existente");
-        }
-        System.out.println();
+    public void setQuantidade(int quantidade){
+        this.quantidade = quantidade;
     }
+
+    public int getQuantidade(){
+        return quantidade;
+    }
+
 
     public void add_produto(int ficha) {// Adição de um produto
 
@@ -117,13 +112,13 @@ public class Produtos{
 
         setId(ficha);
         System.out.println("Informe o código de identificação do produto: ");
-        aux1 = input.nextLine();
+        aux1 = input.nextInt();
         setId(aux1);
         System.out.println("Informe o Nome: ");
         aux2 = input.nextLine();
         setNome(aux2);
         System.out.println("Informe o Tamanho: ");
-        aux1 = input.nextLong();
+        aux1 = input.nextLine();
         setTamanho(aux1);
         System.out.println("Informe a cor: ");
         aux2 = input.nextLine();
@@ -132,7 +127,7 @@ public class Produtos{
         aux2 = input.nextLine();
         setMarca(aux2);
         System.out.println("Informe o preco: ");
-        aux1 = input.nextLine();
+        aux1 = input.nextInt();
         setPreco(aux1);
         System.out.println("Informe o tipo: ");
         aux2 = input.nextLine();
@@ -146,6 +141,9 @@ public class Produtos{
         System.out.println("Informe o fornecedor: ");
         aux2 = input.nextLine();
         setFornecedor(aux2);
+        System.out.println("Informe a quantidade: ");
+        aux1 = input.nextInt();
+        setFornecedor(aux1);
         System.out.println();
     }
 
@@ -164,6 +162,7 @@ public class Produtos{
         setCategoria(aux2);
         setFabricante(aux2);
         setFornecedor(aux2);
+        setQuantidade(aux1);
     }
 
     public void M_Inicial() {// função de apoio
@@ -171,8 +170,8 @@ public class Produtos{
         System.out.println("Informe o campo que deseja alterar:");
         System.out.println("ID(1);\n" + "Nome(2);\n" + "Tamanho(3);\n" + 
         "Cor(4);\n" + "Marca(5);\n" + "Preço(6);\n" + "Tipo(7);\n" + "Categoria(8);\n" +
-        "Fabricante(9);\n" + "Fornecedor(10);\n"
-                + "Sair(11).");
+        "Fabricante(9);\n" + "Fornecedor(10);\n" + "Quantidade(11);\n"
+                + "Sair(12).");
     }
 
     public void editar_produto() {// Alterar detalhes de um empregado
@@ -181,7 +180,7 @@ public class Produtos{
         int aux1;
         String aux2;
 
-        while (opcao != 11) {
+        while (opcao != 12) {
 
             M_Inicial();
             opcao = input.nextInt();
@@ -250,6 +249,13 @@ public class Produtos{
                 break;
 
             case 11:
+                System.out.println("Informe a Nova Quantidade: ");
+                aux1 = input.nextInt();
+                setFornecedor(aux1);
+                System.out.println();
+                break;
+
+            case 12:
                 System.out.println("Modificações Salvas!!");
                 System.out.println();
                 break;
