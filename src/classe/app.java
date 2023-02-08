@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import classes.Funcionarios;
 import classes.Produtos;
+import classes.Movimentacao;
 
 public class App {
     public static void msgErroDados(){
