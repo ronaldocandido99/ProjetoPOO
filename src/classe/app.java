@@ -106,7 +106,7 @@ public class App {
                     System.out.println();
                     //Relatorio relatorio = new Relatorio();
                     //relatorio.relatorio();
-                    mov. add_m(indice)
+                    mov.add_m(indice)
                     System.out.println();
                     option = startOptions();
                     break;
