@@ -32,6 +32,6 @@ public class Produto{
         "\nTipo: " + this.tipo +
         "\nCategoria: " + this.categoria +
         "\nFabricante: " + this.fabricante +
-        "\nFornecedor: " + this.fornecedor +
+        "\nFornecedor: " + this.fornecedor;
     }
 }
