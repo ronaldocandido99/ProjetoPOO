@@ -57,6 +57,17 @@ Cada atividade possui as seguintes informações:
     10) Permitir operações de undo e redo de informações referentes aos produtos, movimentações e funcionários/responsáveis.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Classes
+
+Funcionarios
+
+Movimentacao
+
+Produto
+
+App
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
