@@ -94,6 +94,14 @@ Cada atividade possui as seguintes informações:
     Produto
     
         # Funções: 
+        
+        add_produto: Adição de um Produto;
+        
+        remover_produto: Remoção de um Produto;
+        
+        M_Inicial: função de apoio para editar_produto;
+        
+        editar_produto: Alterar Detalhes de um Produto;
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Getting Started
