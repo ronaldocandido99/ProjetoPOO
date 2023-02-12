@@ -4,16 +4,16 @@
 
 O sistema de gerenciamento de estoque objetiva o gerenciamento de produtos de uma loja de departamento. Essa loja de departamento vende produtos dos tipos: roupas (feminina, masculina e infantil), calçados, artigos de casa, acessórios, eletrônicos e perfumes. 
 
-(i) identificação;
-(ii) especificação;
-(iii) tamanho;
-(iv) cor;
-(v) marca;
-(vi) preço;
-(vii) tipo
-(viii) categoria
-(ix) fabricante;
-(x) fornecedor;
+    (i) identificação;
+    (ii) especificação;
+    (iii) tamanho;
+    (iv) cor;
+    (v) marca;
+    (vi) preço;
+    (vii) tipo
+    (viii) categoria
+    (ix) fabricante;
+    (x) fornecedor;
 
 Cada atividade possui as seguintes informações:
 
