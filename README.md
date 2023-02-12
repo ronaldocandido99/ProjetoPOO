@@ -1,5 +1,14 @@
 # Sistema para Gerenciamento de Estoque
 
+## Equipe:
+
+    Eduardo Serpa Cavalcante
+    Lilian Neves
+    Lucas Arthur Ribeiro Mascarenhas
+    Matheus Feitosa Ramos
+    Ronaldo Cândido dos Santos 
+    
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Visão Geral do Sistema
 
 O sistema de gerenciamento de estoque objetiva o gerenciamento de produtos de uma loja de departamento. Essa loja de departamento vende produtos dos tipos: roupas (feminina, masculina e infantil), calçados, artigos de casa, acessórios, eletrônicos e perfumes. 
