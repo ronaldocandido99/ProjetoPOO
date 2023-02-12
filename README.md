@@ -59,13 +59,41 @@ Cada atividade possui as seguintes informações:
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Classes
 
-Funcionarios
+    App
+    
+        # Funções: 
+    
+    Funcionarios
+    
+        # Funções: 
+        
+        imp_e: Impressão dos Dados de um Funcionario;
+    
+        add_e: Adição de um Funcionario;
+    
+        rem_e: Remoção de um Funcionario;
+    
+        M_Inicial: função de apoio para ed_e;
+    
+        ed_e: Alterar Detalhes de um Funcionario;
 
-Movimentacao
+    Movimentacao
+    
+        # Funções: 
+        
+        imp_m: Impressão dos Dados de uma Movimentação;
+    
+        add_m: Adição de uma Movimentação;
+    
+        CategoriaProduto: função de apoio para add_m e ed_m;
+    
+        M_Inicial: função de apoio para ed_m;
+    
+        ed_m: Alterar Detalhes de uma Movimentação;
 
-Produto
-
-App
+    Produto
+    
+        # Funções: 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Getting Started
