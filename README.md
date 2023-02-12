@@ -62,6 +62,20 @@ Cada atividade possui as seguintes informações:
     App
     
         # Funções: 
+        
+        main;
+        
+        startOptions: Função de Apoio para main:
+        
+                        Input dos Dados
+        
+        msgErroOpcoes: Tratamento de Erro de Entrada: 
+        
+                        Opção Inválida
+        
+        msgErroDados: Tratamento de Erro de Entrada: 
+        
+                        Tipo de Dado Inválido
     
     Funcionarios
     
@@ -73,7 +87,7 @@ Cada atividade possui as seguintes informações:
     
         rem_e: Remoção de um Funcionario;
     
-        M_Inicial: função de apoio para ed_e;
+        M_Inicial: Função de Apoio para ed_e;
     
         ed_e: Alterar Detalhes de um Funcionario;
 
@@ -85,9 +99,9 @@ Cada atividade possui as seguintes informações:
     
         add_m: Adição de uma Movimentação;
     
-        CategoriaProduto: função de apoio para add_m e ed_m;
+        CategoriaProduto: Função de Apoio para add_m e ed_m;
     
-        M_Inicial: função de apoio para ed_m;
+        M_Inicial: Função de Apoio para ed_m;
     
         ed_m: Alterar Detalhes de uma Movimentação;
 
@@ -99,7 +113,7 @@ Cada atividade possui as seguintes informações:
         
         remover_produto: Remoção de um Produto;
         
-        M_Inicial: função de apoio para editar_produto;
+        M_Inicial: Função de Apoio para editar_produto;
         
         editar_produto: Alterar Detalhes de um Produto;
 
