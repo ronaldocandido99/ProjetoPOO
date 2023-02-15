@@ -124,6 +124,7 @@ public class Funcionarios{
 
             M_Inicial();
             opcao = input.nextInt();
+            input.nextLine();
             switch (opcao) {
             case 1:
                 System.out.println("Informe o Novo Nome Completo: ");
