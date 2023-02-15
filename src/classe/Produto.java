@@ -16,7 +16,7 @@ public class Produtos{
     public String fornecedor;
     public int quantidade;
     public String status;
-    
+
     Scanner input = new Scanner(System.in);
 
     public void setId(int id) {
@@ -70,7 +70,7 @@ public class Produtos{
     public void setTipo(String tipo){
         this.tipo = tipo;
     }
-    
+
     public String getTipo(){
         return tipo;
     }
@@ -106,7 +106,7 @@ public class Produtos{
     public int getQuantidade(){
         return quantidade;
     }
-    
+
     public void setStatus(String status){
         this.status = status;
     }
@@ -118,6 +118,7 @@ public class Produtos{
     public void imp_p() {
 
         if (getId() != -1) {
+            System.out.println("***********RELATÓRIO DO PRODUTO:**********");
             System.out.println("Identificação: " + getId());
             System.out.println("Nome: " + getNome());
             System.out.println("Tamanho: " + getTamanho());
@@ -129,7 +130,9 @@ public class Produtos{
             System.out.println("Fabricante: " + getFabricante());
             System.out.println("Fornecedor: " + getFornecedor());
             System.out.println("Quantidade: " + getQuantidade());
-            System.out.println("Status do Produto: ", + getStatus());
+            System.out.println("Status do Produto: " + getStatus());
+            System.out.println("Localidade: Matriz");
+            System.out.println("******************************************");
 
         } else {
             System.out.println("Produto não existente");
@@ -187,6 +190,7 @@ public class Produtos{
         else{
             setStatus("Esgotado");
         }
+        imp_p();
     }
 
     public void remover_produto() {// Remoção de um produto
@@ -206,14 +210,15 @@ public class Produtos{
         setFornecedor(aux2);
         setQuantidade(aux1);
         setStatus(aux2);
+        imp_p();
     }
 
     public void M_Inicial() {// função de apoio
 
         System.out.println("Informe o campo que deseja alterar:");
-        System.out.println("ID(1);\n" + "Nome(2);\n" + "Tamanho(3);\n" + 
-        "Cor(4);\n" + "Marca(5);\n" + "Preço(6);\n" + "Tipo(7);\n" + "Categoria(8);\n" +
-        "Fabricante(9);\n" + "Fornecedor(10);\n" + "Quantidade(11);\n" + "Status(12)\n"
+        System.out.println("ID(1);\n" + "Nome(2);\n" + "Tamanho(3);\n" +
+                "Cor(4);\n" + "Marca(5);\n" + "Preço(6);\n" + "Tipo(7);\n" + "Categoria(8);\n" +
+                "Fabricante(9);\n" + "Fornecedor(10);\n" + "Quantidade(11);\n" + "Status(12)\n"
                 + "Sair(13).");
     }
 
@@ -228,102 +233,103 @@ public class Produtos{
             M_Inicial();
             opcao = input.nextInt();
             switch (opcao) {
-            case 1:
-                System.out.println("Informe o Novo Id: ");
-                aux1 = input.nextInt();
-                setId(aux1);
-                input.nextLine();
-                System.out.println();
-                break;
-            case 2:
-                System.out.println("Informe o Novo Nome: ");
-                aux2 = input.nextLine();
-                setNome(aux2);
-                input.nextLine();
-                System.out.println();
-                break;
-            case 3:
-                System.out.println("Informe o Novo Tamanho: ");
-                aux2 = input.nextLine();
-                setTamanho(aux2);
-                input.nextLine();
-                System.out.println();
-                break;
-            case 4:
-                System.out.println("Informe a Nova Cor: ");
-                aux2 = input.nextLine();
-                setCor(aux2);
-                input.nextLine();
-                System.out.println();
-                break;
-            case 5:
-                System.out.println("Informe a Nova Marca: ");
-                aux2 = input.nextLine();
-                setMarca(aux2);
-                input.nextLine();
-                System.out.println();
-                break;
-            case 6:
-                System.out.println("Informe o Novo Preço: ");
-                aux1 = input.nextInt();
-                setPreco(aux1);
-                input.nextLine();
-                System.out.println();
-                break;
-            case 7:
-                System.out.println("Informe o Novo Tipo: ");
-                aux2 = input.nextLine();
-                setCor(aux2);
-                input.nextLine();
-                System.out.println();
-                break;
-            case 8:
-                System.out.println("Informe a Nova Categoria: ");
-                aux2 = input.nextLine();
-                setCategoria(aux2);
-                input.nextLine();
-                System.out.println();
-                break;
-            case 9:
-                System.out.println("Informe o Novo Fabricante: ");
-                aux2 = input.nextLine();
-                setFabricante(aux2);
-                input.nextLine();
-                System.out.println();
-                break;
-            case 10:
-                System.out.println("Informe o Novo Fornecedor: ");
-                aux2 = input.nextLine();
-                setFornecedor(aux2);
-                input.nextLine();
-                System.out.println();
-                break;
+                case 1:
+                    System.out.println("Informe o Novo Id: ");
+                    aux1 = input.nextInt();
+                    setId(aux1);
+                    input.nextLine();
+                    System.out.println();
+                    break;
+                case 2:
+                    System.out.println("Informe o Novo Nome: ");
+                    aux2 = input.nextLine();
+                    setNome(aux2);
+                    input.nextLine();
+                    System.out.println();
+                    break;
+                case 3:
+                    System.out.println("Informe o Novo Tamanho: ");
+                    aux2 = input.nextLine();
+                    setTamanho(aux2);
+                    input.nextLine();
+                    System.out.println();
+                    break;
+                case 4:
+                    System.out.println("Informe a Nova Cor: ");
+                    aux2 = input.nextLine();
+                    setCor(aux2);
+                    input.nextLine();
+                    System.out.println();
+                    break;
+                case 5:
+                    System.out.println("Informe a Nova Marca: ");
+                    aux2 = input.nextLine();
+                    setMarca(aux2);
+                    input.nextLine();
+                    System.out.println();
+                    break;
+                case 6:
+                    System.out.println("Informe o Novo Preço: ");
+                    aux1 = input.nextInt();
+                    setPreco(aux1);
+                    input.nextLine();
+                    System.out.println();
+                    break;
+                case 7:
+                    System.out.println("Informe o Novo Tipo: ");
+                    aux2 = input.nextLine();
+                    setCor(aux2);
+                    input.nextLine();
+                    System.out.println();
+                    break;
+                case 8:
+                    System.out.println("Informe a Nova Categoria: ");
+                    aux2 = input.nextLine();
+                    setCategoria(aux2);
+                    input.nextLine();
+                    System.out.println();
+                    break;
+                case 9:
+                    System.out.println("Informe o Novo Fabricante: ");
+                    aux2 = input.nextLine();
+                    setFabricante(aux2);
+                    input.nextLine();
+                    System.out.println();
+                    break;
+                case 10:
+                    System.out.println("Informe o Novo Fornecedor: ");
+                    aux2 = input.nextLine();
+                    setFornecedor(aux2);
+                    input.nextLine();
+                    System.out.println();
+                    break;
 
-            case 11:
-                System.out.println("Informe a Nova Quantidade: ");
-                aux1 = input.nextInt();
-                setQuantidade(aux1);
-                input.nextLine();
-                System.out.println();
-                break;
-            case 12:
-                System.out.println("Informe o Novo Status: ");
-                aux2 = input.nextLine();
-                setStatus(aux2);
-                input.nextLine();
-                System.out.println();
-                break;
+                case 11:
+                    System.out.println("Informe a Nova Quantidade: ");
+                    aux1 = input.nextInt();
+                    setQuantidade(aux1);
+                    input.nextLine();
+                    System.out.println();
+                    break;
+                case 12:
+                    System.out.println("Informe o Novo Status: ");
+                    aux2 = input.nextLine();
+                    setStatus(aux2);
+                    input.nextLine();
+                    System.out.println();
+                    break;
 
-            case 13:
-                System.out.println("Modificações Salvas!!");
-                System.out.println();
-                break;
-            default:
-                System.out.println("Opção Invalida!!!");
-                System.out.println("Digite Novamente");
-                System.out.println();
+                case 13:
+                    System.out.println("Modificações Salvas!!");
+                    System.out.println();
+                    break;
+                default:
+                    System.out.println("Opção Invalida!!!");
+                    System.out.println("Digite Novamente");
+                    System.out.println();
             }
         }
+        imp_p();
     }
 
 }
