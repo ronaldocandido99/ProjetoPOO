@@ -4,6 +4,14 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class App {
+
+    Scanner input = new Scanner(System.in);
+    Produtos produto = new Produtos();
+    Funcionarios funcionario = new Funcionarios();
+    Movimentacao mov = new Movimentacao();
+    Pagamento pag = new Pagamento();
+    Login log = new Login();
+
     public static void msgErroDados() {
         System.err.println("Dados informados incorretamente! Por favor, informe os dados corretamente.");
     }
@@ -26,6 +34,7 @@ public class App {
         System.out.println("*  [7] Realizar Movimentação          *");
         System.out.println("*  [8] Realizar Pagamento             *");
         System.out.println("*  [9] Realizar Login                 *");
+        System.out.println("*  [10] Relatório Geral               *");
         System.out.println("*  [0] Encerrar programa              *");
         System.out.println("***************************************");
         System.out.print("Selecione a opção desejada: ");
@@ -127,6 +136,19 @@ public class App {
                         log.add_login();
                     }
                     System.out.println();
+                    option = startOptions();
+                    break;
+                case 10: // Relatório
+                    System.out.println();
+                    produto.imp_p();
+                    mov.imp_m();
+                    funcionario.imp_e();
+                    System.out.println();
+                    option = startOptions();
+                    break;
+                default:
+                    System.out.println("Selecione uma opção válida!");
+
                     option = startOptions();
                     break;
             }
