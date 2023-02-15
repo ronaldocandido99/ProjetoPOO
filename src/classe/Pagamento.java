@@ -132,7 +132,7 @@ public class Pagamento {
 
         while(true){
             
-            M_Inicial()
+            M_Inicial();
             p = input.nextInt();
             input.nextLine();
             if((p < 1) || (p > 5)){
@@ -148,9 +148,9 @@ public class Pagamento {
             v2 = input.nextDouble();
             System.out.println("Seu Troco é de: " + (v2 - v));
         }else if(p == 2){
-            setAtriCDeb()
+            setAtriCDeb();
         }else if(p == 3){
-            setAtriCCred()
+            setAtriCCred();
         }else if(p == 4){
             System.out.println("Chaves Pix da Loja Super Estoque:"); 
             System.out.println("314159265"); 
