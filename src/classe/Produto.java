@@ -115,6 +115,27 @@ public class Produtos{
         return status;
     }
 
+    public void imp_p() {
+
+        if (getId() != -1) {
+            System.out.println("Identificação: " + getId());
+            System.out.println("Nome: " + getNome());
+            System.out.println("Tamanho: " + getTamanho());
+            System.out.println("Cor: " + getCOr());
+            System.out.println("Marca: " + getMarca());
+            System.out.println("Preço: " + getPreco());
+            System.out.println("Tipo: " + getTipo());
+            System.out.println("Categoria: " + getCategoria());
+            System.out.println("Fabricante: " + getFabricante());
+            System.out.println("Fornecedor: " + getFornecedor());
+            System.out.println("Quantidade: " + getQuantidade());
+            System.out.println("Status do Produto: ", getStatus());
+
+        } else {
+            System.out.println("Produto não existente");
+        }
+        System.out.println();
+    }
 
     public void add_produto(int ficha) {// Adição de um produto
 
@@ -158,10 +179,14 @@ public class Produtos{
         aux1 = input.nextInt();
         input.nextLine();
         setQuantidade(aux1);
-        System.out.println("Informe o status: ");
-        aux2 = input.nextLine();
-        setStatus(aux2);
-        System.out.println();
+
+        if (getQuantidade()!=0){
+            setStatus("Em estoque");
+        }
+
+        else{
+            setStatus("Esgotado");
+        }
     }
 
     public void remover_produto() {// Remoção de um produto
