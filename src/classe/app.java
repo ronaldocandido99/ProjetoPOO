@@ -4,15 +4,15 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class App {
-    public static void msgErroDados(){
+    public static void msgErroDados() {
         System.err.println("Dados informados incorretamente! Por favor, informe os dados corretamente.");
     }
 
-    public static void msgErroOpcoes(){
+    public static void msgErroOpcoes() {
         System.err.println("Por favor, selecione uma das opções válidas.");
     }
 
-    public static int startOptions(){
+    public static int startOptions() {
         Scanner op = new Scanner(System.in); // scanner da opção de entrada
         int opt = -1;
 
@@ -24,14 +24,15 @@ public class App {
         System.out.println("*  [5] Remover Produto                *");
         System.out.println("*  [6] Remover Funcionário            *");
         System.out.println("*  [7] Realizar Movimentação          *");
+        System.out.println("*  [8] Realizar Pagamento             *");
+        System.out.println("*  [9] Realizar Login                 *");
         System.out.println("*  [0] Encerrar programa              *");
         System.out.println("***************************************");
         System.out.print("Selecione a opção desejada: ");
 
-        try{
+        try {
             opt = op.nextInt();
-        }
-        catch(InputMismatchException error){
+        } catch (InputMismatchException error) {
             msgErroOpcoes();
             opt = startOptions();
         }
@@ -41,9 +42,12 @@ public class App {
 
     public static void main(String[] args) {
 
+        Scanner input = new Scanner(System.in);
         Produtos produto = new Produtos();
         Funcionarios funcionario = new Funcionarios();
         Movimentacao mov = new Movimentacao();
+        Pagamento pag = new Pagamento();
+        Login log = new Login();
 
         System.out.println("***************************************");
         System.out.println("*                                     *");
@@ -102,11 +106,30 @@ public class App {
                     System.out.println();
                     //Relatorio relatorio = new Relatorio();
                     //relatorio.relatorio();
-                    mov.add_m(indice)
+                    mov.add_m(indice);
+                    System.out.println();
+                    option = startOptions();
+                    break;
+                case 8: // Realizar Pagamento
+                    System.out.println();
+                    pag.setPagamento();
+                    System.out.println();
+                    option = startOptions();
+                    break;
+                case 9: // Realizar Login
+                    System.out.println();
+                    System.out.println("Ja possui cadastro?");
+                    String aux;
+                    aux = input.nextLine();
+                    if (aux.equals("sim")) {
+                        log.acesso();
+                    } else {
+                        log.add_login();
+                    }
                     System.out.println();
                     option = startOptions();
                     break;
             }
         }
     }
-}        
+}
