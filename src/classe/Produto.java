@@ -129,7 +129,7 @@ public class Produtos{
             System.out.println("Fabricante: " + getFabricante());
             System.out.println("Fornecedor: " + getFornecedor());
             System.out.println("Quantidade: " + getQuantidade());
-            System.out.println("Status do Produto: ", getStatus());
+            System.out.println("Status do Produto: ", + getStatus());
 
         } else {
             System.out.println("Produto não existente");
