@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Movimentacao{
 
-    private String dataMovimentacao;//falta os tratamentos pra o tipo data
+    private String dataMovimentacao;
     private String Destino;
     private String Origem;
     private int idProduto;
-    private int tipoProduto;//falta fazer os tratamentos pro tipo de produto
+    private int tipoProduto;
     private int idResponsavel;
     private int idMovimentacao;
 
@@ -48,7 +48,7 @@ public class Movimentacao{
 
     public String getTipoProduto_string(){
         int tipoProduto;
-        tipoProduto = getTipoProduto() 
+        tipoProduto = getTipoProduto();
         if (tipoProduto == 1) {
             return "Roupa Feminina";
         } else if (tipoProduto == 2) {
@@ -96,9 +96,9 @@ public class Movimentacao{
 
     public void imp_m() {
 
-        if (getId() != -1) {
+        if (getIdMovimentacao() != -1) {
             System.out.println("Data da Movimentação: " + getDataMovimentacao());
-            System.out.println("Produto: " + gettTipoProduto(());
+            System.out.println("Produto: " + getIdProduto());
             System.out.println("Categoria do Produto: " +  getTipoProduto_string() );
             System.out.println("Responsavel da Movimentação: " + getIdResponsavel());
             System.out.println("Destino da Movimentação: " + getDestino());  
@@ -135,7 +135,7 @@ public class Movimentacao{
         setIdProduto(aux1);
         input.nextLine();
         //Categoria do Produto
-        CategoriaProduto()
+        CategoriaProduto();
         //Categoria do Produto
         System.out.println("Informe O Destino do Produto: ");
         aux2 = input.nextLine();
@@ -162,7 +162,7 @@ public class Movimentacao{
     public void ed_m() {// Alterar detalhes de um empregado
 
         int opcao = 1;
-        long aux1;
+        int aux1;
         String aux2;
         double aux3;
 
@@ -187,7 +187,7 @@ public class Movimentacao{
                 break;
             case 3:
                 //Categoria do Produto
-                CategoriaProduto()
+                CategoriaProduto();
                 //Categoria do Produto
                 System.out.println();
                 break;
@@ -224,18 +224,3 @@ public class Movimentacao{
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
