@@ -114,7 +114,7 @@ public class Movimentacao{
         int aux1;
         System.out.println("Informe a Categoria do Produto(somente numeros):");
         System.out.println("Roupa Feminina(1);\n" + "Roupa Masculina(2);\n" + "Roupa Infantil(3);\n"
-        + "Calçados(4);\n" + "Artigos de Casa;\n" + "Acessórios(6);\n" + "Eletrônicos(7);\n" + "Perfumes(8)");
+        + "Calçados(4);\n" + "Artigos de Casa(5);\n" + "Acessórios(6);\n" + "Eletrônicos(7);\n" + "Perfumes(8)");
         aux1 = input.nextInt();
         setTipoProduto(aux1);
         input.nextLine();
