@@ -4,6 +4,8 @@
 4) Permitir a alteração do status
 • “Em estoque”, “Sem estoque”, “quantidade” etc.*/
 
+package classes;
+
 import java.util.Scanner;
 
 public class Funcionarios{
