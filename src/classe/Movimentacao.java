@@ -100,6 +100,7 @@ public class Movimentacao{
             System.out.println("Data da Movimentação: " + getDataMovimentacao());
             System.out.println("Produto: " + getIdProduto());
             System.out.println("Categoria do Produto: " +  getTipoProduto_string() );
+            System.out.println("Origem da Movimentação: " + getOrigem());
             System.out.println("Destino da Movimentação: " + getDestino());
             System.out.println("ID do Responsavel da Movimentação: " + getIdResponsavel());
         } else {
@@ -167,6 +168,7 @@ public class Movimentacao{
 
             M_Inicial();
             opcao = input.nextInt();
+            input.nextLine();
             switch (opcao) {
             case 1:
                 System.out.println("Informe a Nova Identificação do Responsavel: ");
@@ -189,19 +191,19 @@ public class Movimentacao{
                 System.out.println();
                 break;
             case 4:
-                System.out.println("Informe O Novo Destino do Produto: ");//erro
+                System.out.println("Informe O Novo Destino do Produto: ");
                 aux2 = input.nextLine();
                 setDestino(aux2);
                 System.out.println();
                 break;
             case 5:
-                System.out.println("Informe a Nova Origem do Produto:");//erro
+                System.out.println("Informe a Nova Origem do Produto:");
                 aux2 = input.nextLine();
                 setOrigem(aux2);
                 System.out.println();
                 break;
             case 6:
-                System.out.println("Informe a Nova Data da Movimentação do Produto:(hh:mm DD/MM/YYYY)");//erro
+                System.out.println("Informe a Nova Data da Movimentação do Produto:(hh:mm DD/MM/YYYY)");
                 aux2 = input.nextLine();
                 setDataMovimentacao(aux2);
                 System.out.println();
