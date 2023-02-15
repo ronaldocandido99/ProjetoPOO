@@ -121,7 +121,7 @@ public class Produtos{
             System.out.println("Identificação: " + getId());
             System.out.println("Nome: " + getNome());
             System.out.println("Tamanho: " + getTamanho());
-            System.out.println("Cor: " + getCOr());
+            System.out.println("Cor: " + getCor());
             System.out.println("Marca: " + getMarca());
             System.out.println("Preço: " + getPreco());
             System.out.println("Tipo: " + getTipo());
