@@ -137,10 +137,10 @@ public class Movimentacao{
         //Categoria do Produto
         CategoriaProduto();
         //Categoria do Produto
-        System.out.println("Informe O Destino do Produto: ");//erro
+        System.out.println("Informe O Destino do Produto: ");
         aux2 = input.nextLine();
         setDestino(aux2);
-        System.out.println("Informe a Origem do Produto:");//erro
+        System.out.println("Informe a Origem do Produto:");
         aux2 = input.nextLine();
         setOrigem(aux2);
         System.out.println("Informe a Data da Movimentação do Produto:(hh:mm DD/MM/YYYY)");
@@ -189,13 +189,13 @@ public class Movimentacao{
                 System.out.println();
                 break;
             case 4:
-                System.out.println("Informe O Novo Destino do Produto: ");
+                System.out.println("Informe O Novo Destino do Produto: ");//erro
                 aux2 = input.nextLine();
                 setDestino(aux2);
                 System.out.println();
                 break;
             case 5:
-                System.out.println("Informe a Nova Origem do Produto:");
+                System.out.println("Informe a Nova Origem do Produto:");//erro
                 aux2 = input.nextLine();
                 setOrigem(aux2);
                 System.out.println();
