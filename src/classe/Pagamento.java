@@ -84,7 +84,6 @@ public class Pagamento {
         setNCartCred(aux1);
         System.out.println("Informe a Validade do Cartao de Credito: ");
         aux2 = input.nextLine();
-        input.nextLine();
         setValidadeCartCred(aux2);
         System.out.println("Informe o CVC do Cartao de Credito: ");
         aux3 = input.nextInt();
@@ -104,7 +103,6 @@ public class Pagamento {
         setNCartDebito(aux1);
         System.out.println("Informe a Validade do Cartao de Debito: ");
         aux2 = input.nextLine();
-        input.nextLine();
         setValidadeCartDebito(aux2);
         System.out.println("Informe o CVC do Cartao de Debito: ");
         aux3 = input.nextInt();
@@ -115,11 +113,11 @@ public class Pagamento {
     public void M_Inicial() {// função de apoio
 
         System.out.println("Informe a Forma de Pagamento do Empregado: ");
-        System.out.println("Dinheiro(1);\n" + "Cartão de Debito(2);" + "Cartão de Credito+(3);" + "Pix(4);\n"
-                + "Transferencia Bancaria(5).");
+        System.out.println("Dinheiro(1);\n" + "Cartão de Debito(2);\n" + "Cartão de Credito(3);\n" + "Pix(4);\n"
+                + "Transferencia Bancaria(5).\n");
     }
 
-    public void setPagamento(){// função principal para pagamentos
+    public void setPagamento(){
         
         double v;
 
