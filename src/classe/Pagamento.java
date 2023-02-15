@@ -72,7 +72,7 @@ public class Pagamento {
         return cvcCartaoDebito;
     }
     
-    public void setAtriCCred(){
+    public void setAtriCCred(){// função para atributos do cartão de credito
         
         long aux1;
         String aux2; 
@@ -92,7 +92,7 @@ public class Pagamento {
         setCVCCartCred(aux3);
     }
 
-    public void setAtriCDeb(){
+    public void setAtriCDeb(){// função para atributos do cartão de debito
         
         long aux1;
         String aux2; 
@@ -119,7 +119,7 @@ public class Pagamento {
                 + "Transferencia Bancaria(5).");
     }
 
-    public void setPagamento(){
+    public void setPagamento(){// função principal para pagamentos
         
         double v;
 
