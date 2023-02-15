@@ -46,7 +46,7 @@ public class Movimentacao{
         return idProduto;
     }
 
-    public String getTipoProduto_string(){
+    public String getTipoProduto_string(){//possui erro
         int tipoProduto;
         tipoProduto = getTipoProduto();
         if (tipoProduto == 1) {
@@ -100,8 +100,8 @@ public class Movimentacao{
             System.out.println("Data da Movimentação: " + getDataMovimentacao());
             System.out.println("Produto: " + getIdProduto());
             System.out.println("Categoria do Produto: " +  getTipoProduto_string() );
-            System.out.println("Responsavel da Movimentação: " + getIdResponsavel());
-            System.out.println("Destino da Movimentação: " + getDestino());  
+            System.out.println("Destino da Movimentação: " + getDestino());
+            System.out.println("ID do Responsavel da Movimentação: " + getIdResponsavel());
         } else {
             System.out.println("Empregado não existente");
         }
@@ -112,8 +112,8 @@ public class Movimentacao{
 
         int aux1;
         System.out.println("Informe a Categoria do Produto(somente numeros):");
-        System.out.println("Roupa Feminina(1);\n" + "Roupa Masculina(2);" + "Roupa Infantil(3);\n" 
-        + "Calçados(4);" + "Artigos de Casa;\n" + "Acessórios(6);" + "Eletrônicos(7);" + "Perfumes(8)");
+        System.out.println("Roupa Feminina(1);\n" + "Roupa Masculina(2);\n" + "Roupa Infantil(3);\n"
+        + "Calçados(4);\n" + "Artigos de Casa;\n" + "Acessórios(6);\n" + "Eletrônicos(7);\n" + "Perfumes(8)");
         aux1 = input.nextInt();
         setTipoProduto(aux1);
         input.nextLine();
@@ -137,26 +137,23 @@ public class Movimentacao{
         //Categoria do Produto
         CategoriaProduto();
         //Categoria do Produto
-        System.out.println("Informe O Destino do Produto: ");
+        System.out.println("Informe O Destino do Produto: ");//erro
         aux2 = input.nextLine();
         setDestino(aux2);
-        input.nextLine();
-        System.out.println("Informe a Origem do Produto:");
+        System.out.println("Informe a Origem do Produto:");//erro
         aux2 = input.nextLine();
         setOrigem(aux2);
-        input.nextLine();
         System.out.println("Informe a Data da Movimentação do Produto:(hh:mm DD/MM/YYYY)");
         aux2 = input.nextLine();
         setDataMovimentacao(aux2);
-        input.nextLine();
         System.out.println();
     }
 
     public void M_Inicial() {// função de apoio
 
         System.out.println("Informe o campo que deseja alterar:");
-        System.out.println("Identificação do Responsavel(1);\n" + "Identificação do Produto(2);" + "Categoria do Produto(3);\n" 
-        + "Destino do Produto(4);" + "Origem do Produto(5);\n" + "Data da Movimentação do Produto(6);" + "Sair(7).");
+        System.out.println("Identificação do Responsavel(1);\n" + "Identificação do Produto(2);\n" + "Categoria do Produto(3);\n"
+        + "Destino do Produto(4);\n" + "Origem do Produto(5);\n" + "Data da Movimentação do Produto(6);\n" + "Sair(7).");
     }
 
     public void ed_m() {// Alterar detalhes de um empregado
@@ -195,21 +192,18 @@ public class Movimentacao{
                 System.out.println("Informe O Novo Destino do Produto: ");
                 aux2 = input.nextLine();
                 setDestino(aux2);
-                input.nextLine();
                 System.out.println();
                 break;
             case 5:
                 System.out.println("Informe a Nova Origem do Produto:");
                 aux2 = input.nextLine();
                 setOrigem(aux2);
-                input.nextLine();
                 System.out.println();
                 break;
             case 6:
-                System.out.println("Informe a Nova Data da Movimentação do Produto:(hh:mm DD/MM/YYYY)");
+                System.out.println("Informe a Nova Data da Movimentação do Produto:(hh:mm DD/MM/YYYY)");//erro
                 aux2 = input.nextLine();
                 setDataMovimentacao(aux2);
-                input.nextLine();
                 System.out.println();
                 break;   
             case 7:
