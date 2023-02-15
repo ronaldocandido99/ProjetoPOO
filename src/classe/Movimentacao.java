@@ -43,7 +43,7 @@ public class Movimentacao{
     }
 
     public int getTipoProduto() {
-        return idProduto;
+        return tipoProduto;
     }
 
     public String getTipoProduto_string(){//possui erro
