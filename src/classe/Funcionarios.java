@@ -109,7 +109,7 @@ public class Funcionarios{
     public void M_Inicial() {// função de apoio
 
         System.out.println("Informe o campo que deseja alterar:");
-        System.out.println("Nome Completo(1);\n" + "Email(2);" + "Telefone(3);" + "CPF(4);\n"
+        System.out.println("Nome Completo(1);\n" + "Email(2);\n" + "Telefone(3);\n" + "CPF(4);\n"
                 + "Sair(5).");
     }
 
