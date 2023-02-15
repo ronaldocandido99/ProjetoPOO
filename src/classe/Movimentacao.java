@@ -97,12 +97,14 @@ public class Movimentacao{
     public void imp_m() {
 
         if (getIdMovimentacao() != -1) {
+            System.out.println("********RELATÓRIO DA MOVIMENTAÇÃO:********");
             System.out.println("Data da Movimentação: " + getDataMovimentacao());
             System.out.println("Produto: " + getIdProduto());
             System.out.println("Categoria do Produto: " +  getTipoProduto_string() );
             System.out.println("Origem da Movimentação: " + getOrigem());
             System.out.println("Destino da Movimentação: " + getDestino());
             System.out.println("ID do Responsavel da Movimentação: " + getIdResponsavel());
+            System.out.println("******************************************");
         } else {
             System.out.println("Empregado não existente");
         }
@@ -148,6 +150,7 @@ public class Movimentacao{
         aux2 = input.nextLine();
         setDataMovimentacao(aux2);
         System.out.println();
+        imp_m();
     }
 
     public void M_Inicial() {// função de apoio
@@ -218,5 +221,6 @@ public class Movimentacao{
                 System.out.println();
             }
         }
+        imp_m();
     }
 }
