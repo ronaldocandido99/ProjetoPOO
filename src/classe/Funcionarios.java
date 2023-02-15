@@ -61,11 +61,13 @@ public class Funcionarios{
     public void imp_e() {
 
         if (getId() != -1) {
+            System.out.println("********RELATÓRIO DO FUNCIONÁRIO:*********");
             System.out.println("Identificação: " + getId());
             System.out.println("Nome: " + getNome());
             System.out.println("Email: " + getEmail());
             System.out.println("Telefone: " + getTelefone());
-            System.out.println("CPF: " + getCPF());  
+            System.out.println("CPF: " + getCPF());
+            System.out.println("******************************************");
         } else {
             System.out.println("Funcionario não existente");
         }
@@ -92,6 +94,7 @@ public class Funcionarios{
         aux1 = input.nextLong();
         setCPF(aux1);
         System.out.println();
+        imp_e();
     }
 
     public void rem_e() {// Remoção de um empregado
@@ -104,6 +107,7 @@ public class Funcionarios{
         setEmail(aux2);
         setTelefone(aux1);
         setCPF(aux1);
+        imp_e();
     }
 
     public void M_Inicial() {// função de apoio
@@ -162,6 +166,7 @@ public class Funcionarios{
                 System.out.println();
             }
         }
+        imp_e();
     }
 
 }
