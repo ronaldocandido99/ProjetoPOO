@@ -116,6 +116,19 @@ Cada atividade possui as seguintes informações:
         M_Inicial: Função de Apoio para editar_produto;
         
         editar_produto: Alterar Detalhes de um Produto;
+        
+    Pagamento
+    
+        # Funções: 
+        
+        setAtriCCred: Função para Atributos do Cartão de Credito;
+        
+        setAtriCDeb: Função para Atributos do Cartão de Debito;
+        
+        M_Inicial: Função de Apoio para setPagamento;
+        
+        setPagamento: Função Principal para Pagamentos.
+        
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Getting Started
