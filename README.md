@@ -3,7 +3,7 @@
 ## Equipe:
 
     Eduardo Serpa Cavalcante
-    Lilian Neves
+    Lilian Fabrício Marques Neves
     Lucas Arthur Ribeiro Mascarenhas
     Matheus Feitosa Ramos
     Ronaldo Cândido dos Santos 
